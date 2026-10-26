@@ -2,6 +2,8 @@
 
 Search page backed by the astrx-suite onion crawler — the **Onion search** module of [AstrX](https://github.com/Vxmdzhb/astrx).
 
+![Onion search results](docs/screenshot.png)
+
 - Module key: `onionsearch` (switch it on in the site's `resources/config/Modules.config.php`)
 - Pages: `onion_search`
 - Requires: `astrx/cms`, `astrx/framework`, `astrx/library`
