@@ -6,6 +6,11 @@ Search page backed by the astrx-suite onion crawler — the **Onion search** mod
 - Pages: `onion_search`
 - Requires: `astrx/cms`, `astrx/framework`, `astrx/library`
 
+The installer creates the page with its link in the navbar switched off,
+because the federated search ([module-fedsearch](https://github.com/Vxmdzhb/module-fedsearch))
+already offers this engine as a tab. Switch the link on in Admin → Navbar
+to list the page on its own.
+
 It ships its own templates, catalogs (en, it), default configuration and SQL in
 `resources/`; the site overrides any of them from its own `resources/`.
 
