@@ -2,15 +2,15 @@
 declare(strict_types=1);
 
 /**
- * Onion search backend — config. The section key 'OnionSearchConfig' matches the
- * holder's short class name; there is no OnionSearchConfig.config.php, so
- * ModuleLoader falls back to this file (named after the parent namespace segment
- * 'OnionSearch'), exactly like BotTrapConfig → BotTrap.config.php.
+ * Onion search backend config. The section 'OnionSearchConfig' is named
+ * after the class; there is no OnionSearchConfig.config.php, so ModuleLoader
+ * falls back to this file, named after the parent namespace segment (like
+ * BotTrapConfig → BotTrap.config.php).
  *
- * base_url MUST be the loopback onioncrawler `search` server. Only the
- * scheme+host from here are ever used to build the request; the user-supplied
- * query and page are appended safely. A non-http(s) value is rejected to the
- * localhost default. AstrX never speaks Tor — the engine owns the SOCKS hop.
+ * base_url must be the local onioncrawler search server. Only its scheme and
+ * host are used; the user's query and page are appended safely. Anything that
+ * isn't http(s) is replaced by the localhost default. AstrX never speaks Tor
+ * itself: the engine handles the SOCKS hop.
  */
 return [
     'OnionSearchConfig' => [
