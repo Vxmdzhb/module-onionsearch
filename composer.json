@@ -1,6 +1,7 @@
 {
     "name": "astrx/module-onionsearch",
     "description": "Search page backed by the astrx-suite onion crawler",
+    "license": "LicenseRef-DoWhatever",
     "type": "astrx-module",
     "keywords": [
         "astrx",
