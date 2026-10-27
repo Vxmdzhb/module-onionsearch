@@ -17,4 +17,5 @@ return [
     'onionsearch.result_count' => 'Circa {count} risultato/i',
     'onionsearch.prev'         => 'Precedente',
     'onionsearch.next'         => 'Successivo',
+    'onionsearch.tab' => 'Onion',
 ];

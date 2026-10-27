@@ -17,4 +17,5 @@ return [
     'onionsearch.result_count' => 'About {count} result(s)',
     'onionsearch.prev'         => 'Previous',
     'onionsearch.next'         => 'Next',
+    'onionsearch.tab' => 'Onion',
 ];

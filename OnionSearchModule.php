@@ -34,6 +34,12 @@ final class OnionSearchModule implements Module
             'controllers'  => [
                 'onion_search' => \AstrX\OnionSearch\Controller\OnionSearchController::class,
             ],
+            // The page sits under Search in the menu.
+            'nav_section'  => ['onion_search' => 'site_search'],
+            // A tab on the site's Search page.
+            'extensions'   => [
+                \AstrX\Search\Tab\SearchTab::class => [\AstrX\OnionSearch\OnionSearchTab::class],
+            ],
             'teardown'     => 'onionsearch.down.sql',
             // Templates, translations and default config (see docs/MODULES.md).
             'resources'    => 'resources',
